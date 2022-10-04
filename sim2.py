@@ -21,9 +21,9 @@
 
 
 # Для N = 5: 1, -3, 9, -27, 81
-a=int(input())
-for i in range(1,a+1) :
-    print((-3)**i)
+# a=int(input())
+# for i in range(1,a+1) :
+#     print((-3)**i)
 
 
 

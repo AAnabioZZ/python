@@ -59,14 +59,5 @@
 # b1 = int(input("Bx ="))
 # b2 = int(input("By ="))
 # result = (((a1-b1)**2)+((b2-a2)**2))**0.5
-# print(round(result, 2))
+# print(round(result, 3))
 
-# задание со звездочкой
-a = float(input("Введите число с точкой и мы посчитаем сумму цифр: "))
-resalt = 0
-while a % 1 != 0.0:
-    a *= 10
-while a != 0.0:
-    resalt += a % 10
-    a //= 10
-print(int(resalt))
