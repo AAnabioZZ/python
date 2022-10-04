@@ -38,34 +38,40 @@
 # print(lst)
 
 
-# 4) Задайте число N и создайте список, заполненный числами из промежутка [-N, N]. Найдите произведение элементов на указанных позициях. Позиции хранятся в файле file.txt в одной строке одно число.
+# 4**) Задайте число N и создайте список, заполненный числами из промежутка [-N, N]. Найдите произведение элементов на указанных позициях. Позиции хранятся в файле file.txt в одной строке одно число.
 
-# lst=[]
-# lst2 =[]
-# resalt =1
-# n=int(input("Введите число n: "))
-# for i in range(-n,n+1):
-#     lst.append(i)
-# t = open('D:\\MyPrograms\\Python\HomeWorck Py\\text.txt')
-# for line in t:
-#         lst2.append(int(line))
-# for i in lst2:
-#     resalt *= lst[i+1]
-# print(f"Позиции в файле: {lst2}")
-# print(f"Нашь список: {lst}")
-# print(f"Результат перемножения: {resalt}")
+from fileinput import close
 
-# 5) Реализуйте алгоритм перемешивания списка.(Без использования библиотеки random)
+lst=[]
+lst2 =[]
+resalt =1
+n=int(input("Введите число n: "))
+for i in range(-n,n):
+    lst.append(i)
 
-import time
-import datetime
+t = open('D:\\MyPrograms\\Python\HomeWorck Py\\text.txt')
+for line in t:
+        lst2.append(int(line))
+close
 
-a = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
-for i in range(len(a)-1):
-    tempi = datetime.datetime.now().microsecond % len(a)
-    time.sleep(0.003)
-    # print(tempi)
-    temp = a[tempi]
-    a[tempi] = a[i]
-    a[i] = temp
-print(a)
+for i in lst2:
+    resalt *= lst[i-1]
+
+print(f"Позиции в файле: {lst2}")
+print(f"Нашь список: {lst}")
+print(f"Результат перемножения: {resalt}")
+
+# 5**) Реализуйте алгоритм перемешивания списка.(Без использования библиотеки random)
+
+# import time
+# import datetime
+
+# a = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+# for i in range(len(a)-1):
+#     tempi = datetime.datetime.now().microsecond % len(a)
+#     time.sleep(0.003)
+#     # print(tempi)
+#     temp = a[tempi]
+#     a[tempi] = a[i]
+#     a[i] = temp
+# print(a)
