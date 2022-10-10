@@ -75,12 +75,33 @@
 
 # 5. ** Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.
 
-def negafib(size):
-    lst=[1,0,1]
-    for i in range(size-1):
-        lst.insert(0,(lst[1]-lst[0]))
-    for i in range(size-1):
-        lst.append(lst[-1]+lst[-2])
-    print(lst)        
+# def negafib(size):
+#     lst=[1,0,1]
+#     for i in range(size-1):
+#         lst.insert(0,(lst[1]-lst[0]))
+#     for i in range(size-1):
+#         lst.append(lst[-1]+lst[-2])
+#     print(lst)        
 
-negafib(int(input("Создадим последовательность Негафибаначи какого размара?: ")))
+# negafib(int(input("Создадим последовательность Негафибаначи какого размара?: ")))
+n = [47756688399943]
+
+list = []
+for i in n:
+    list.append(n)
+print(list)
+
+# list_count = []
+# for i in list:
+#     count = 0
+#     for k in list:
+#         if k == i:
+#             count += 1
+#             list_count.append(count)
+# print(list_count)
+
+# result = []
+# for i in range(len(list_count)):
+#     if list_count[i] == 1:
+#         result.append(list[i-1])
+# print(result)
