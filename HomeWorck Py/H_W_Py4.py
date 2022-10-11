@@ -59,20 +59,3 @@ if h > 0:
 else: 
    with open('Mnogochlen1.txt', 'a', encoding='utf-8') as mnog1:
      mnog1.write(f'от {h} не могу создать последовательность')
-#         my_f.write(f'{(-b + sqrt(d)/(2*a))}\n')
-#         my_f.write(f'{(-b - sqrt(d)/(2*a))}\n')
-#     elif d == 0:
-#         my_f.write(f'{-b /(2*a)}\n')
-#     else:
-#         my_f.write('Нет корней\n')
-# n=5
-# def how(k):
-#     a = random.choice(range(1,3))
-#     if a > 1: return k
-#     return -1
-
-
-
-# for _ in range(1,10):
-#     print(random.getrandbits(1))
-#     print(f"{random.getrandbits(1)}\n")
