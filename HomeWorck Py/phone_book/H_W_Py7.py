@@ -1,15 +1,4 @@
-def chek():
-    try:
-        with open('phone_book.csv', 'r+', encoding='utf-8') as phBook:
-            return True
-    except:
-        return False
-def chek_int(a:str)->int:
-    try:
-        int(a)
-        return int(a)
-    except:
-        return chek_int(input('ой, это не число, попробуй еще:'))
+
 
 
 print(f"Привет✌, добро пожаловать в телефонный справочник\n📖📞\n1. Записать 🖊\n2. Прочитать👀\n0. Выход🚪")
